@@ -1,0 +1,22 @@
+.scroll_home {
+  position:absolute;
+  font-size:250%;
+  bottom:1%;
+  right:48.5%;
+  left: auto;
+  a {
+    color:#ffffff;
+    cursor:default;
+    outline: 0;
+  }
+  a:hover {
+    color:$accent-color;
+    text-decoration: none;
+    outline: 0;
+  }
+ a:focus {
+    color:$accent-color;
+    text-decoration: none;
+    outline: 0;
+  }
+}

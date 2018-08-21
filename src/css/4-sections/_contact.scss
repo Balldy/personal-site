@@ -1,0 +1,21 @@
+.contact {
+  background-color: $contact-bg;
+  padding-top: 10%;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  justify-content: center;
+
+  p {
+    text-align: center;
+  }
+
+  @media screen and (max-width: 750px) {
+    padding-top: 20%;
+  }
+  .contact-blurb {
+    height: auto;
+    font-size: 18px;
+    width: 60%;
+    background-color: lighten($contact-bg, 5%);
+  }
+}

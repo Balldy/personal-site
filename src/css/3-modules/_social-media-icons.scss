@@ -1,0 +1,16 @@
+.social_media {
+  position: absolute;
+  right: 2%;
+  left: auto;
+  bottom: 2%;
+
+  a {
+    color: $main-font-color;
+    font-size: $regular-font-size;
+    text-decoration: none;
+  }
+  a:hover {
+    color: $accent-color;
+    text-decoration: none;
+  }
+}
