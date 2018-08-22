@@ -1,42 +1,43 @@
 const path = require("path");
 const HTMLWebpackPlugin = require("html-webpack-plugin");
-const FriendlyErrorsWebpackPlugin = require("friendly-errors-webpack-plugin");
+const webpack = require("webpack");
 
 module.exports = {
   entry: ["babel-polyfill", "./src/index.js"],
   output: {
-    path: path.resolve(__dirname, "dist"),
-    filename: "index_bundle.js"
+    filename: "[name].bundle.js",
+    path: path.resolve(__dirname, "dist")
+  },
+  optimization: {
+    splitChunks: {
+      cacheGroups: {
+        commons: {
+          test: /[\\/]node_modules[\\/]/,
+          name: "vendors",
+          chunks: "all"
+        }
+      }
+    }
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.jsx?$/,
         exclude: /node_modules/,
-        loader: "babel-loader"
+        use: "babel-loader"
       },
       {
         test: /\.scss$/,
         exclude: /node_modules/,
-        use: [
-          {
-            loader: "style-loader" // creates style nodes from JS strings
-          },
-          {
-            loader: "css-loader" // translates CSS into CommonJS
-          },
-          {
-            loader: "sass-loader" // compiles Sass to CSS
-          }
-        ]
+        use: ["style-loader", "css-loader", "sass-loader"]
       }
     ]
   },
   devServer: {
-    quiet: true
+    hot: true
   },
   plugins: [
     new HTMLWebpackPlugin({ template: "./src/index.html" }),
-    new FriendlyErrorsWebpackPlugin()
+    new webpack.HotModuleReplacementPlugin()
   ]
 };
