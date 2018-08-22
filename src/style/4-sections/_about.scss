@@ -5,11 +5,13 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  p {
+  .about_blurb {
+    padding-top: 1%;
+    font-size: 1em;
+    height: 300px;
     width: 70%;
-    padding: 1px;
-    height: auto;
     background-color: lighten($about-bg, 5%);
+    text-align: center;
     a {
       color: $accent-color;
       text-decoration: none;
