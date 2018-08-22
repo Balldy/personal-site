@@ -11,7 +11,7 @@ const About = () => (
         github
       </a>
       . You can also find more information on my
-      <a href="https://es.linkedin.com/in/christopher-ball-548680a7">
+      <a href="https://www.linkedin.com/in/chris-ball-548680a7/" target="blank">
         {" linkedIn "}
       </a>
       profile.
