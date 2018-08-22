@@ -2,7 +2,7 @@ import React from "react";
 import DevIcons from "./DevIcons";
 
 const About = () => (
-  <div className="container-fluid page about " id="about_page ">
+  <div className="container-fluid page about">
     <p className="about_blurb ">
       I&apos;m Chris, I am a software developer from Ireland, currently working
       at Thoughtworks in Barcelona. To see some code examples check out my

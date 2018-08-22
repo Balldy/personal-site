@@ -3,7 +3,7 @@ import Social from "./Social";
 import Scroll from "./Scroll";
 
 const Home = () => (
-  <div className="container-fluid page home" id="home_page">
+  <div className="container-fluid page home">
     <h1 className="name">Christopher Ball</h1>
     <h2>
       <span className="devicons devicons-terminal" />
