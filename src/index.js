@@ -1,4 +1,6 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import { render } from "react-dom";
+import Main from "./components/Main";
+import "./style/main.scss";
 
-ReactDOM.render(<div>HELLO FROM REACT</div>, document.getElementById("root"));
+render(<Main />, document.getElementById("root"));

@@ -1,9 +1,8 @@
-.social_media {
+.social-media-home {
   position: absolute;
   right: 2%;
   left: auto;
   bottom: 2%;
-
   a {
     color: $main-font-color;
     font-size: $regular-font-size;
@@ -12,5 +11,22 @@
   a:hover {
     color: $accent-color;
     text-decoration: none;
+  }
+  i {
+    padding: 5px;
+  }
+}
+
+.social-media-contact {
+  a {
+    color: $accent-color;
+    text-decoration: none;
+  }
+  a:hover {
+    color: $main-font-color;
+    text-decoration: none;
+  }
+  i {
+    padding: 5px;
   }
 }

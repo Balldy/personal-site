@@ -2,17 +2,17 @@
   background-color: $about-bg;
   font-weight: 300;
   font-size: 18px;
-  flex-flow: row;
-  align-items: flex-start;
-  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
   p {
     width: 70%;
     padding: 1px;
     height: auto;
     background-color: lighten($about-bg, 5%);
-  }
-  img {
-    border: 2px solid #ffffff;
-    padding: 0;
+    a {
+      color: $accent-color;
+      text-decoration: none;
+    }
   }
 }

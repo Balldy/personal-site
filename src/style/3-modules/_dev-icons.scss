@@ -1,6 +1,10 @@
-.dev_icons {
-  font-size: 40px;
-  color:$accent-color;
-  padding-top:0;
-  padding-bottom:0;
+.dev-icons {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  i {
+    font-size: 50px;
+    color: $main-font-color;
+    padding: 5px;
+  }
 }
