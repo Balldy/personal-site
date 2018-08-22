@@ -1,5 +1,6 @@
 import React from "react";
 import Social from "./Social";
+import Scroll from "./Scroll";
 
 const Home = () => (
   <div className="container-fluid page home" id="home_page">
@@ -9,6 +10,7 @@ const Home = () => (
       Developer
     </h2>
     <Social className="social-media-home" iconSize={2} />
+    <Scroll />
   </div>
 );
 
