@@ -7,10 +7,9 @@ const Contact = () => (
       <p>
         You can find me on social media:
         <Social className="social-media-contact" iconSize={3} />
-        or
+        or contact me by
         <a className="email" href="mailto:chrisball02@gmail.com ">
-          {" "}
-          e-mail
+          {" e-mail "}
         </a>
       </p>
     </div>
