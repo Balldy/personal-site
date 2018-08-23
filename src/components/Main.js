@@ -4,11 +4,11 @@ import About from "./About";
 import Contact from "./Contact";
 
 const Main = () => (
-  <div>
+  <React.Fragment>
     <Home />
     <About />
     <Contact />
-  </div>
+  </React.Fragment>
 );
 
 export default Main;
