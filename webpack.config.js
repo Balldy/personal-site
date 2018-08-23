@@ -1,6 +1,9 @@
 const path = require("path");
 const HTMLWebpackPlugin = require("html-webpack-plugin");
 const CleanWebpackPlugin = require("clean-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+
+const devMode = process.env.NODE_ENV !== "production";
 const webpack = require("webpack");
 
 module.exports = {
@@ -11,13 +14,7 @@ module.exports = {
   },
   optimization: {
     splitChunks: {
-      cacheGroups: {
-        commons: {
-          test: /[\\/]node_modules[\\/]/,
-          name: "vendors",
-          chunks: "all"
-        }
-      }
+      chunks: "all"
     }
   },
   module: {
