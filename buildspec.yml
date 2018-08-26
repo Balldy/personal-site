@@ -9,4 +9,4 @@ artifacts:
   files:
     - dist/index.html
     - dist/main.bundle.js
-    - dist/vendor.bundle.js
+    - dist/vendors~main.bundle.js
