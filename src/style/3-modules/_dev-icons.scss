@@ -1,11 +1,10 @@
 .dev-icons {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
+  flex-flow: row nowrap;
+  justify-content: space-between;
   i {
     font-size: 3em;
     color: $main-font-color;
-    padding: 7px;
+    padding: 0 20px;
   }
 }
 
@@ -13,9 +12,8 @@
   .dev-icons {
     justify-content: center;
     i {
-      font-size: 30px;
+      font-size: 2em;
       color: $main-font-color;
-      padding: 2px;
     }
   }
 }
