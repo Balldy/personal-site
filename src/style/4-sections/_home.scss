@@ -11,4 +11,10 @@
     font-weight: 400;
     color: lighten($accent-color, 5%);
   }
+
+  @media (max-width: 600px) {
+    h2 {
+      width: auto;
+    }
+  }
 }

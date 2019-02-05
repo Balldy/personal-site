@@ -21,4 +21,12 @@
       color: $accent-color;
     }
   }
+
+  @media (max-width: 600px) {
+    .contact-blurb {
+      font-size: 15px;
+      height: 50%;
+      width: 98%;
+    }
+  }
 }

@@ -8,3 +8,14 @@
     padding: 7px;
   }
 }
+
+@media (max-width: 600px) {
+  .dev-icons {
+    justify-content: center;
+    i {
+      font-size: 30px;
+      color: $main-font-color;
+      padding: 2px;
+    }
+  }
+}

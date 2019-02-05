@@ -4,18 +4,28 @@
   align-items: center;
   display: flex;
   flex-direction: column;
+
   .about_blurb {
     padding-top: 1%;
-    font-size: 1em;
+    font-size: 16px;
     height: 15em;
     width: 70%;
     background-color: lighten($about-bg, 5%);
+
     p {
       margin: 3em;
       a {
         color: $accent-color;
         text-decoration: none;
       }
+    }
+  }
+
+  @media (max-width: 600px) {
+    .about_blurb {
+      font-size: 15px;
+      height: 75%;
+      width: 98%;
     }
   }
 }
