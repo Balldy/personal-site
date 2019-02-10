@@ -14,14 +14,15 @@ const About = () => (
         <a href="https://www.github.com/balldy" target="blank">
           {" github"}
         </a>
-        . You can also find more information on my
+        , you can also find more information about me on my
         <a
           href="https://www.linkedin.com/in/chris-ball-548680a7/"
           target="blank"
         >
           {" linkedIn "}
         </a>
-        profile.
+        profile. Below are some of the languages and technologies I enjoy
+        working with.
       </p>
     </div>
     <DevIcons />
