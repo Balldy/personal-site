@@ -4,10 +4,14 @@ const CleanWebpackPlugin = require("clean-webpack-plugin");
 const webpack = require("webpack");
 
 module.exports = {
-  entry: ["babel-polyfill", "./src/index.js"],
+  entry: "./src/index.jsx",
   output: {
     filename: "[name].bundle.js",
-    path: path.resolve(__dirname, "dist")
+    path: path.resolve(__dirname, "dist"),
+    publicPath: ""
+  },
+  resolve: {
+    extensions: [".jsx", ".js"]
   },
   optimization: {
     splitChunks: {
@@ -25,6 +29,18 @@ module.exports = {
         test: /\.scss$/,
         exclude: /node_modules/,
         use: ["style-loader", "css-loader", "sass-loader"]
+      },
+      {
+        test: /\.(png|woff|woff2|ttf|svg)$/,
+        use: [
+          {
+            loader: "url-loader",
+            options: {
+              limit: 10000,
+              name: "[name].[ext]"
+            }
+          }
+        ]
       }
     ]
   },

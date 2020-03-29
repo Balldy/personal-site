@@ -8,7 +8,7 @@
     "react/jsx-filename-extension": [
       1,
       {
-        "extensions": [".js"]
+        "extensions": [".jsx", ".js"]
       }
     ],
     "prettier/prettier": "error",
