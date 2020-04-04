@@ -5,7 +5,7 @@ import "./social.scss";
 import Github from "../../assets/icons/github.svg";
 import Twitter from "../../assets/icons/twitter.svg";
 import Linkedin from "../../assets/icons/linkedin.svg";
-import Envelope from "../../assets/icons/Envelope.svg";
+import Envelope from "../../assets/icons/envelope.svg";
 
 const Social = () => (
   <div className="social">
