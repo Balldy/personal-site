@@ -7,7 +7,7 @@ module.exports = {
   entry: "./src/index.jsx",
   output: {
     filename: "[name].bundle.js",
-    path: path.resolve(__dirname, "dist"),
+    path: path.resolve(__dirname, "public"),
     publicPath: ""
   },
   resolve: {
@@ -49,7 +49,7 @@ module.exports = {
   },
   plugins: [
     new HTMLWebpackPlugin({ template: "./src/index.html" }),
-    new CleanWebpackPlugin("./dist"),
+    new CleanWebpackPlugin("./public"),
     new webpack.HotModuleReplacementPlugin()
   ]
 };
