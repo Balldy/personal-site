@@ -1,5 +1,4 @@
 import React from "react";
-
 import MyPicture from "../../assets/pictures/my-picture.jpg";
 
 import "./picture.scss";
