@@ -1,0 +1,20 @@
+.about {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 2% 0 0 0;
+
+    p {
+        width:55%;
+
+        a {
+            color:#dd067d
+        }
+    }
+
+    @media screen and (max-width: 992px) {
+    p {
+      width:75%;
+    }
+  }
+}

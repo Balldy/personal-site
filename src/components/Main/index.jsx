@@ -1,16 +1,18 @@
 import React from "react";
+import About from "../About";
 import Header from "../Header";
-import Social from "../Social";
 import Picture from "../Picture";
+import Social from "../Social";
 
 import "./main.scss";
 
 const Main = () => (
-  <div className="main">
+  <main className="main">
     <Picture />
     <Header />
     <Social />
-  </div>
+    <About />
+  </main>
 );
 
 export default Main;
