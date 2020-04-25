@@ -48,7 +48,10 @@ module.exports = {
     hot: true
   },
   plugins: [
-    new HTMLWebpackPlugin({ template: "./src/index.html" }),
+    new HTMLWebpackPlugin({
+      template: "./src/index.html",
+      favicon: "./src/assets/icons/favicon.png"
+    }),
     new CleanWebpackPlugin("./public"),
     new webpack.HotModuleReplacementPlugin()
   ]
