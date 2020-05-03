@@ -1,31 +1,35 @@
 {
-  "name": "serverless-portfolio",
+  "name": "personal-site",
   "version": "1.0.0",
-  "description": "A professional portfolio website",
+  "description": "personal site",
   "private": true,
   "repository": "git@github.com:Balldy/serverless-portfolio.git",
   "author": "Chris Ball <chrisball02@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server --mode=development",
-    "build": "webpack --mode=production",
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
     "lint": "eslint . ",
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
+    "gatsby": "^2.21.9",
+    "gatsby-image": "^2.4.0",
+    "gatsby-plugin-manifest": "^2.4.1",
+    "gatsby-plugin-react-helmet": "^3.3.0",
+    "gatsby-plugin-sass": "^2.3.0",
+    "gatsby-plugin-sharp": "^2.6.0",
+    "gatsby-source-filesystem": "^2.3.0",
+    "gatsby-transformer-sharp": "^2.5.0",
     "prop-types": "^15.6.2",
-    "react": "^16.4.2",
-    "react-dom": "^16.4.2"
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-helmet": "^6.0.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.8.4",
-    "@babel/core": "^7.9.0",
-    "@babel/preset-env": "^7.9.0",
-    "@babel/preset-react": "^7.9.4",
-    "autoprefixer": "^9.7.5",
-    "babel-loader": "^8.1.0",
-    "clean-webpack-plugin": "^0.1.19",
-    "css-loader": "^1.0.0",
     "eslint": "^5.16.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^3.0.1",
@@ -33,16 +37,7 @@
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-prettier": "^2.6.2",
     "eslint-plugin-react": "^7.11.1",
-    "file-loader": "^2.0.0",
-    "html-webpack-plugin": "^3.2.0",
     "node-sass": "^4.9.3",
-    "postcss-loader": "^3.0.0",
-    "prettier": "^1.14.2",
-    "sass-loader": "^7.1.0",
-    "style-loader": "^0.22.1",
-    "url-loader": "^4.0.0",
-    "webpack": "^4.17.0",
-    "webpack-cli": "^3.1.0",
-    "webpack-dev-server": "^3.1.5"
+    "prettier": "^1.14.2"
   }
 }
