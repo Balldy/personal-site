@@ -6,10 +6,10 @@ import Terminal from "../../assets/icons/terminal.svg";
 const Header = () => (
   <div className="header">
     <h1 className="name">Christopher Ball</h1>
-    <h2>
+    <span className="subheader">
       <img src={Terminal} alt="terminal icon" />
-      Software Engineer
-    </h2>
+      <h2>Software Engineer</h2>
+    </span>
   </div>
 );
 
