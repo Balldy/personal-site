@@ -1,5 +1,5 @@
 import React from "react";
-import MyPicture from "../../assets/pictures/my-picture.jpg";
+import MyPicture from "../../assets/pictures/me.jpg";
 
 import "./picture.scss";
 
