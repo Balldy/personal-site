@@ -25,17 +25,16 @@
    
    
 
-    @media (max-width: 600px) {
+    @media (max-width: 680px) {
         h1{
-            font-size: 48px;
+            font-size: 30px;
         }
-        
-        h2 {
-          font-size: 24px;          
-        }
-
-        img {
-            height: 24px;
-        }
-    }
+        .subheader{        
+            h2 {
+              font-size: 20px;          
+            }
+            img {
+                height: 24px;
+            }
+    }}
 }
