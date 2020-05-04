@@ -14,7 +14,7 @@ module.exports = {
         short_name: `Christopher Ball`,
         start_url: `/`,
         lang: `en`,
-        theme_color: `##dd067d`,
+        theme_color: `#dd067d`,
         display: `minimal-ui`,
         icon: `src/assets/icons/favicon.png`
       }
