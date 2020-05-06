@@ -1,23 +1,27 @@
 .picture-wrapper {
     display: flex;
+    width: 500px;
     flex-direction: row;
     justify-content: flex-end;
     margin: 5% 0 2% 0;
 
     img {
-      width: 25%;
-      margin: 2% 5% 2%;
+      width: 170px;
       border-radius: 25%;
       align-self: flex-start;
       box-shadow: 1px 2px 14px -1px rgba(0,0,0,0.66);
     }
 
-    @media only screen and (max-width: 600px) {
-        img {
+
+    @media only screen and (max-width: 680px) {
+      width:100%;  
+      
+      img {
             width: 20%;
             margin: 5%;
         }
       }
+
 
 
 }
